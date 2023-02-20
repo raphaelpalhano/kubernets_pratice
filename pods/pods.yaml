@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-web-azul
+  labels:
+    cor: verde
+spec:
+  containers:
+  - name: web
+    image: fabricioveronez/web-page:blue
+    ports:
+    - containerPort: 80 
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-web-verde
+  labels:
+    cor: verde
+spec:
+  containers:
+  - name: web
+    image: fabricioveronez/web-page:green
+    ports:
+    - containerPort: 80  
